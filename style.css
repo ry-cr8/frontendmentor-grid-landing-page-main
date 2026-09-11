@@ -7,16 +7,51 @@
   box-sizing: border-box;
 }
 
-body {
-  min-height: 100vh;
-}
-
 :root {
   --white: hsl(0, 0%, 100%);
+  --whitegray: hsl(0, 0%, 100%, 0.5);
   --Blue200: hsl(224, 100%, 95%);
   --Blue400: hsl(220, 100%, 64%);
   --Blue600: hsl(228, 100%, 60%);
   --Blue700: hsl(228, 99%, 58%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+body {
+  font-family: "Inter";
+  min-height: 100vh;
+  background-color: var(--Blue700);
+}
+
+header {
+  border-bottom: 1.5px solid var(--whitegray);
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-name {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.8em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  text-decoration: none;
+}
+
+.bullet {
+  line-height: 1;
+  font-size: 1.5em;
+}
+.burger-menu {
+  background-color: var(--Blue700);
+  border: none;
+  cursor: pointer;
 }
 
 .attribution {
