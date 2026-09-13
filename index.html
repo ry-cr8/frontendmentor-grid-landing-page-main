@@ -20,7 +20,15 @@
     <header>
       <div class="header-container">
         <a class="logo-name" href="/"
-          ><span class="bullet">&bull;</span> Bridge Collective</a
+          ><span class="bullet"
+            ><img
+              class="svg-bullet"
+              src="./assets/images/circle-svgrepo-com.svg"
+              alt="bullet icon"
+              height="11px"
+              width="11px"
+          /></span>
+          Bridge Collective</a
         >
 
         <button
@@ -29,7 +37,11 @@
           aria-label="Open navigation"
           aria-expanded="false"
         >
-          <img src="./assets/images/icon-menu.svg" alt="burger-menu icon" />
+          <img
+            class="burger-menu-icon"
+            src="./assets/images/icon-menu.svg"
+            alt="burger-menu icon"
+          />
         </button>
       </div>
     </header>
@@ -44,7 +56,7 @@
       </ul>
     </nav>
 
-    <main>
+    <main class="grid-container">
       <section class="hero">
         <h1>A classroom for every child.</h1>
 
@@ -54,29 +66,27 @@
         </p>
       </section>
 
-      <section class="stats" aria-labelledby="impact-heading">
-        <h2 id="impact-heading">Our impact</h2>
-
+      <section class="stats">
         <div class="stats-grid">
-          <article>
+          <article style="grid-area: students">
             <h3>2.4M</h3>
             <p>Students reached</p>
             <p>Across 31 countries since 2011.</p>
           </article>
 
-          <article>
+          <article style="grid-area: schools">
             <h3>1,284</h3>
             <p>Schools partnered</p>
             <p>In 14 countries, from Kenya to Guatemala.</p>
           </article>
 
-          <article>
+          <article style="grid-area: teachers">
             <h3>38K</h3>
             <p>Teachers trained</p>
             <p>Equipped with modern tools and methodology.</p>
           </article>
 
-          <article>
+          <article style="grid-area: graduation">
             <h3>3.1&times;</h3>
             <p>Graduation lift</p>
             <p>Partner schools outperform national averages 3x.</p>

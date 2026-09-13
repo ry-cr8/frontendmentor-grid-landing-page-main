@@ -8,7 +8,7 @@
 }
 
 :root {
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(0, 31%, 95%);
   --whitegray: hsl(0, 0%, 100%, 0.5);
   --Blue200: hsl(224, 100%, 95%);
   --Blue400: hsl(220, 100%, 64%);
@@ -21,6 +21,7 @@ body {
   font-family: "Inter";
   min-height: 100vh;
   background-color: var(--Blue700);
+  color: var(--white);
 }
 
 header {
@@ -44,15 +45,18 @@ header {
   text-decoration: none;
 }
 
-.bullet {
-  line-height: 1;
-  font-size: 1.5em;
+.svg-bullet {
+  fill: white;
+}
+
+.svg-bullet,
+.burger-menu {
+  border: none;
+  cursor: pointer;
 }
 
 .burger-menu {
   background-color: var(--Blue700);
-  border: none;
-  cursor: pointer;
 }
 
 .main-nav {
@@ -61,6 +65,19 @@ header {
 
 .main-nav.is-open {
   display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-areas:
+    "students schools"
+    "teachers graduation";
 }
 
 .attribution {
